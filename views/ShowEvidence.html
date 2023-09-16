@@ -49,62 +49,83 @@
             
     </nav>
 
-    <a class="icon-link icon-link-hover mt-5 pt-3" href="/event/evidence/new">
-        Add
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
-            viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-            <use xlink:href="#arrow-right"></use>
-        </svg>
-    </a>
+    <div class="container fs-3">
+        <a class="icon-link icon-link-hover mt-5 pt-3" href="/event/evidence/new">
+            Add
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                <use xlink:href="#arrow-right"></use>
+            </svg>
+        </a>
+    </div>
 
-    <h1 class="display-3 text-center">Evidence</h1>
+    <h1 class="display-2 text-center mb-5 mt-3 pb-5">Evidence</h1>
+    <section>
+        <div class="container mb-5 pb-5">
+            <div class="row ">
+                <div class="col border border-dark">
+                    <h3 class="display-5">Respondent</h3>
+                    <hr>
 
-    <div class="container ">
-        <div class="row ">
-            <div class="col border border-dark">
-                <h1>Respondent</h1>
-
-                <h1> msg </h1>
+                    <h1> msg </h1>
 
 
-                <div>
-                    if (find_Evidence_Res.length!==0)
-                    for( let i of find_Evidence_Res.Images )
-                    <img src="<%= i.url %>" alt="">
+                    <div>
+                        if (find_Evidence_Res.length!==0)
+                        for( let i of find_Evidence_Res.Images )
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <img src="add image1" alt="image1">
+                            <img src="add image2" alt="image2">
+                            <img src="add image3" alt="image3">
+                            <img src="add image4" alt="image4">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col border border-dark">
+                    <h3 class="display-5">Petioner</h3>
+                    <hr>
+
+                    <h1> msg </h1>
+
+                    <div>
+                        if (find_Evidence_Pet!==0)
+                        for( let i of find_Evidence_Pet.Images )
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <img src="add image1" alt="image1">
+                            <img src="add image2" alt="image2">
+                            <img src="add image3" alt="image3">
+                            <img src="add image4" alt="image4">
+                        </div>
+                    </div>
                 </div>
             </div>
-        <div class="col border border-dark">
-            <h1>Petioner</h1>
-
-            <h1> msg </h1>
-
-            <div>
-                if (find_Evidence_Pet!==0)
-                for( let i of find_Evidence_Pet.Images )
-                <img src="<%= i.url %>" alt="">
-            </div>
         </div>
-    </div>
-</div>
+        <br>
+    </section>
 
-<footer id="mainFooter" class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="col-xs-12 text-center">
-                <div class="footerMenu">
-                    <ul id="menu-footer-en" class="menu">
-                        <li id="menu-item" class="menu-item "><a href="1">Home</a></li>
-                        <li id="menu-item" class="menu-item"><a href="3">Contact Us</a></li>
-                        <li id="menu-item" class="menu-item "><a href="4">Feedback</a></li>
-                        <li id="menu-item" class="menu-item"><a href="5">Web Policy</a></li>
-                    </ul>
+    <footer id="mainFooter" class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="col-xs-12 text-center">
+                    <div class="footerMenu">
+                        <ul id="menu-footer-en" class="menu">
+                            <li id="menu-item" class="menu-item "><a href="1">Home</a></li>
+                            <li id="menu-item" class="menu-item"><a href="3">Contact Us</a></li>
+                            <li id="menu-item" class="menu-item "><a href="4">Feedback</a></li>
+                            <li id="menu-item" class="menu-item"><a href="5">Web Policy</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
 
 
