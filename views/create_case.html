@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Create</title>
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,8 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
  
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/testing/public/hello.css">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
     <nav id="mainNav" class="navbar navbar-light navbar-expand-md fixed-top py-0"   style="background-color: #bcdff7;">
         <div class="container-fluid">
@@ -42,35 +44,52 @@
         </div>
     </nav>
 
-    <section class="container-fluid">
-        <div class="row align-items-center">           
-            <div class="col-2"></div>
-            <div class="col-2">
-                <div class="title_images mt-5 py-5"><img typeof="foaf:Image" class="image-style-none" src="https://www.india.gov.in/sites/upload_files/npi/files/law-justice.png" width="162" height="163" alt="Law &amp; Justice" title="Law &amp; Justice"></div>
-            </div>
-            <div class="col-5 text-center mt-5 py-5">
-                    <h1 class="display-3">Law and Justice</h1>
-            </div>
-            <div class="col-2"></div>
-        </div>
-            <div class="row">
-                <div class="col-2"></div>
-                <div class="col-8 d-flex justify-content-center" id="paragraph">
-                The Constitution of India ensures the protection of life and personal liberty for every individual, offering robust safeguards against arbitrary actions that might infringe upon fundamental rights. Within this section, you will find an extensive repository of information encompassing diverse legislations, rules, and regulations, along with insights into the legal institutions, commissions, and tribunals that uphold the rule of law. Moreover, you can access valuable information regarding the Supreme Court, High Courts, Subordinate Courts, Legal Aid services, legal professions, and Alternative Dispute Resolution (ADR) mechanisms. Our website also presents comprehensive details concerning online services and initiatives promoting free legal aid. Additionally, you will find a wealth of related documents and forms readily available in this section.
-                </div>
-                <div class="col-2"></div>
-            </div>
-    
+    <section class="container-fluid"></section>
+    <div class="sign-up-form">
+        <img>
+        <h1>Creating Case Form</h1>
+        <hr>
+        <form action="/event/create/case" method="post">
+            <label for="case_name">Case Name : </label>
+            <input type="text" id="case_name" class="input-box" placeholder="case_name">
 
-        <div  id="table" class="container mt-5 On-going-cases">
-            <div class="row align-items-center ">
-                <div class="col"></div>
-                <div class=" col-2 text-center border border-dark-subtle" id="heading" style="background-color: #d6e2ea;">Hearing</div>
-                <div class=" col-3 text-center border border-dark-subtle" id="heading" style="background-color:#d6e2ea">Name</div>
-                <div class=" col-2 text-center border border-dark-subtle" id="heading" style="background-color:#d6e2ea;">Crime</div>
-                <div class="col"></div>
-            </div>
-        </div>
+            <label for="crime">Crime Type : </label>
+            <select class="select-box" id="crime">
+                <option value="civil">Civil</option>
+                <option value="criminal">Criminal</option>
+            </select>
+
+            <label for="room">Room : </label>
+            <select class="select-box" id="room">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            
+            <label for="priority">Priority : </label>
+            <select class="select-box" id="priority">
+                <option value="Quick - High Priority">Quick - High Priority</option>
+                <option value="Slow - Low Priority">Slow - Low Priority</option>
+            </select>
+
+            <label for="deadline">Deadline : </label>
+            <select class="select-box" id="deadline">
+                <option value="6-months">Six - Months</option>
+                <option value="1-year">One - Year</option>
+                <option value="2-year">Two - Year</option>
+            </select>
+
+            
+            <label for="date">Date : </label>
+            <input type="date" id="date" class="input-box" placeholder="date">
+            
+            <label for="time">Time : </label>
+            <input type="time" id="time" class="input-box" placeholder="time">
+            
+            <p><span><input type="checkbox"></span> I agree to the terms of services.</p> 
+            <button type="button" class="submit">Submit</button>
+        </form>
+    </div>
     </section>
 
     <footer id="mainFooter" class="footer">
@@ -79,11 +98,11 @@
                 <div class="col-xs-12 text-center">
                     <div class="footerMenu">
                         <ul id="menu-footer-en" class="menu">
-                            <li id="menu-item" class="menu-item"><a href="1">About Us</a></li>
-                            <li id="menu-item" class="menu-item"><a href="2">Contact Us</a></li>
-                            <li id="menu-item" class="menu-item "><a href="3">Feedback</a></li>
-                            <li id="menu-item" class="menu-item"><a href="4">Web Policy</a></li>
-                            
+                            <li id="menu-item" class="menu-item "><a href="1">Home</a></li>
+                            <li id="menu-item" class="menu-item"><a href="2">About Us</a></li>
+                            <li id="menu-item" class="menu-item"><a href="3">Contact Us</a></li>
+                            <li id="menu-item" class="menu-item "><a href="4">Feedback</a></li>
+                            <li id="menu-item" class="menu-item"><a href="5">Web Policy</a></li>
                         </ul>       
                     </div>     
                 </div>
@@ -91,7 +110,8 @@
         </div>
     </footer>
 
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
- 
+  
 </body>
 </html>
