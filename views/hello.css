@@ -91,6 +91,10 @@ h3{
     justify-content: center;
 }
 
+#terms{
+    color: red;
+}
+
 .input-box{
     border-radius: 15px;
     padding: 10px;
